@@ -36,7 +36,7 @@ p, ul, li {
 
 /* Header Section */
 header {
-    background-color: #f6f6b3; /* Lemonish Background */
+    background-color: transparent; /* Make the background transparent */
     color: #333; /* Dark text for contrast */
     text-align: center;
     padding: 100px 20px; /* Ample padding for header */
@@ -45,7 +45,6 @@ header {
     background-size: cover;
     background-position: center;
 }
-
 
 header h1 {
     font-size: 3.5em;
