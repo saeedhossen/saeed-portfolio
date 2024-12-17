@@ -3,55 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Saeed Hossen Rakib - Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- External CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>Saeed Hossen Rakib</h1>
-        <p>Physical Design Engineer & VLSI Specialist</p>
+        <div class="container">
+            <h1>Saeed Hossen Rakib</h1>
+            <p>Physical Design Engineer | RTL to GDSII Specialist</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="https://www.fiverr.com/s/m5VE5dV" class="btn">Hire Me on Fiverr</a>
+        </div>
     </header>
 
+    <!-- About Section -->
     <section id="about">
-        <h2>About Me</h2>
-        <p>I am a Physical Design Engineer with expertise in VLSI, working with tools like Genus, Innovus, and more. I specialize in RTL to GDSII flows and scripting for design and verification tasks.</p>
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I am Saeed Hossen Rakib, a dedicated Physical Design Engineer with <strong>2 years and 8 months</strong> of experience specializing in RTL to GDSII design. My expertise spans across synthesis, physical verification, PnR, STA, and more, with hands-on work up to <strong>5nm technology</strong>.
+            </p>
+            <p>
+                I received my bachelor's degree in Electrical and Electronic Engineering from <strong>Ahsanullah University of Science and Technology</strong> in Dhaka in June 2022. After graduation, I began working as a Physical Design Engineer at <strong>Neural Semiconductor Limited</strong>.
+            </p>
+            <p>
+                My areas of interest include <strong>ASIC Design, Low Power IC Design, VLSI Circuit and System Design, Microelectronics and Nanotechnology, Electronics, and SoC Design</strong>.
+            </p>
+            <a href="https://www.fiverr.com/s/m5VE5dV" class="btn">Explore My Fiverr Services</a>
+        </div>
     </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>Ahsanullah University of Science and Technology</strong><br>B.Sc. Eng. in Electrical and Electronics Engineering (CGPA: 3.693)</li>
-            <li><strong>Milestone College</strong><br>Higher Secondary Certificate (GPA: 5.00)</li>
-            <li><strong>Galachipa Govt. Model Secondary School</strong><br>Secondary School Certificate (GPA: 5.00)</li>
-        </ul>
-    </section>
-
-    <section id="work">
-        <h2>Work Experience</h2>
-        <p><strong>Neural Semiconductor Ltd. - Physical Design Engineer</strong><br>
-        Responsibilities included RTL to GDSII ASIC Design flow, including synthesis, power planning, routing, timing analysis, and more, for projects up to 5nm technology.</p>
-    </section>
-
-    <section id="publications">
-        <h2>Publications</h2>
-        <ul>
-            <li>"Design and Analysis of a New Ultra Low Power Adiabatic VLSI Circuit" - Journal of VLSI Design and Signal Processing</li>
-            <li>"Performance Analysis of a New Low Power BIST Technique" - 2023 International Conference on Electrical Information and Communication Technology</li>
-        </ul>
-    </section>
-
+    <!-- Skills Section -->
     <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: TCL, C++, Python</li>
-            <li>EDA Tools: Genus, Innovus, Calibre, Voltus</li>
-            <li>Operating Systems: Windows, Linux</li>
-        </ul>
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Programming</h3>
+                    <p>TCL, C/C++, Bash</p>
+                </div>
+                <div class="skill-card">
+                    <h3>EDA Tools</h3>
+                    <p>Genus, Innovus, Calibre, ICV, PVS, Quantus, Star-Rc, Prime Time, Tempus, RedHawk, Voltus, OpenRoad, Klayout & Fusion Compiler</p>
+                </div>
+                <div class="skill-card">
+                    <h3>OS</h3>
+                    <p>Linux, Windows</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Documentation</h3>
+                    <p>PowerPoint, MS Word, OneNote</p>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1: Vitality and Productivity Monitoring IP</h3>
+                <p><strong>PDK:</strong> 5nm | <strong>Frequency:</strong> 2 GHz | <strong>Inst Count:</strong> 150K | <strong>Macros:</strong> 30</p>
+                <ul>
+                    <li>Performed Synthesis, Macro Placement, Power Planning, and Physical Verification.</li>
+                    <li>Developed PG script to mitigate routing congestion.</li>
+                    <li>Resolved DRC violations using customized scripts and tools.</li>
+                    <li>Analyzed Redhawk power reports for consumption optimization.</li>
+                </ul>
+            </div>
+            <!-- Additional projects here... -->
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications">
+        <div class="container">
+            <h2>Publications</h2>
+            <ul>
+                <li><a href="https://www.researchgate.net/publication/378852488_Design_and_Analysis_of_a_New_Ultra_Low_Power_Adiabatic_VLSI_Circuit" target="_blank">Design and Analysis of a New Ultra Low Power Adiabatic VLSI Circuit</a> - <em>Journal of VLSI Design and Signal Processing</em> (2023)</li>
+                <!-- Additional publications here... -->
+            </ul>
+            <p><strong>ORCID:</strong> <a href="https://orcid.org/0009-0008-3727-6699" target="_blank">0009-0008-3727-6699</a></p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:s.h.rakib.153@gmail.com">s.h.rakib.153@gmail.com</a></p>
+            <p>Phone: (+880) 1707679190</p>
+            <p>Fiverr: <a href="https://www.fiverr.com/s/m5VE5dV">Hire Me on Fiverr</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>Contact me at: <a href="mailto:s.h.rakib.153@gmail.com">s.h.rakib.153@gmail.com</a></p>
+        <div class="container">
+            <p>&copy; 2024 Saeed Hossen Rakib | Designed for Professional Portfolios</p>
+        </div>
     </footer>
 </body>
 </html>
