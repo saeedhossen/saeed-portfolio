@@ -1,91 +1,154 @@
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    background-image: url('https://images.unsplash.com/photo-1506748686217-d081927b6e7a'); /* Nature background */
-    background-size: cover;
-    color: #fff;
-    line-height: 1.6;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+/* Container */
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Header Section */
 header {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 30px 0;
+    background: #1e3a8a;
+    color: #fff;
     text-align: center;
+    padding: 30px 0;
+    border-radius: 0 0 8px 8px;
 }
 
 header h1 {
-    color: #ffcc00;
-    margin: 0;
-    font-size: 36px;
-}
-
-header p {
-    font-size: 18px;
-}
-
-/* Section Titles */
-h2 {
-    font-size: 28px;
-    border-bottom: 2px solid #ffcc00;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-
-/* Content Sections */
-section {
-    padding: 40px 0;
-}
-
-.contact-info, .projects, .publications, .skills, .education, .experience {
-    background: rgba(0, 0, 0, 0.6);
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-/* General Text Styles */
-p {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-a {
-    color: #ffcc00;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Projects Section */
-.projects ul, .publications ul {
-    list-style-type: none;
-    padding-left: 20px;
-}
-
-.projects li, .publications li {
+    font-size: 2.5em;
     margin-bottom: 10px;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #333;
-    color: #fff;
+header p {
+    font-size: 1.2em;
 }
 
-footer p {
-    margin: 0;
-    font-size: 16px;
+/* Section Headings */
+h2 {
+    color: #1e3a8a;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #444;
+    margin: 10px 0;
+}
+
+/* Section Box Styling */
+.section-box {
+    padding: 15px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.section-box ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.section-box li {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.section-box a {
+    text-decoration: none;
+    color: #1e90ff;
+    font-weight: bold;
+}
+
+.section-box a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* About Me */
+#profile p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Skills Section */
+#skills p {
+    margin: 8px 0;
+    font-size: 1em;
+}
+
+#skills strong {
+    color: #1e3a8a;
+}
+
+/* Research Interests */
+#research-interests ul {
+    list-style: disc;
+    margin-left: 20px;
+    color: #555;
+}
+
+/* Publications & Research Experiences */
+#publications-research ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+#publications-research li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+#contact p {
+    font-size: 1.1em;
+}
+
+#contact a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Section */
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+    background: #1e3a8a;
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
