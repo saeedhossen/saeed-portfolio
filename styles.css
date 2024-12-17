@@ -9,7 +9,7 @@
 body {
     line-height: 1.6;
     color: #333;
-    background-color: #f4f4f9;
+    background-color: #f5f5f5; /* Light ash background */
 }
 
 /* Container */
@@ -25,10 +25,10 @@ body {
 
 /* Header Section */
 header {
-    background: #1e3a8a;
-    color: #fff;
+    background: #F6F6B3; /* Lemonish background */
+    color: #333; /* Dark text for contrast */
     text-align: center;
-    padding: 30px 0;
+    padding: 50px 0; /* Increased padding for better spacing */
     border-radius: 0 0 8px 8px;
 }
 
@@ -39,11 +39,13 @@ header h1 {
 
 header p {
     font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
 }
 
 /* Section Headings */
 h2 {
-    color: #1e3a8a;
+    color: #6A6A6A; /* Dark Ash for section headings */
     margin-bottom: 10px;
     border-bottom: 2px solid #ddd;
     padding-bottom: 5px;
@@ -57,7 +59,7 @@ h3 {
 /* Section Box Styling */
 .section-box {
     padding: 15px;
-    background-color: #fafafa;
+    background-color: #fafafa; /* Light gray background */
     border: 1px solid #ddd;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -75,13 +77,13 @@ h3 {
 
 .section-box a {
     text-decoration: none;
-    color: #1e90ff;
+    color: #F6F600; /* Lemonish link color */
     font-weight: bold;
 }
 
 .section-box a:hover {
     text-decoration: underline;
-    color: #0056b3;
+    color: #FFB300; /* Slightly darker yellow when hovered */
 }
 
 /* About Me */
@@ -98,7 +100,7 @@ h3 {
 }
 
 #skills strong {
-    color: #1e3a8a;
+    color: #1e3a8a; /* Blue accent for skills */
 }
 
 /* Research Interests */
@@ -125,7 +127,7 @@ h3 {
 }
 
 #contact a {
-    color: #1e90ff;
+    color: #F6F600; /* Lemonish link color */
     text-decoration: none;
 }
 
@@ -138,7 +140,7 @@ h3 {
     text-align: center;
     padding: 10px 0;
     margin-top: 30px;
-    background: #1e3a8a;
+    background: #6A6A6A; /* Dark Ash footer */
     color: #fff;
     border-radius: 8px 8px 0 0;
 }
