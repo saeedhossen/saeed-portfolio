@@ -1,109 +1,91 @@
-* {
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background: url('your-nature-image.jpg') no-repeat center center fixed;
+    background-image: url('https://images.unsplash.com/photo-1506748686217-d081927b6e7a'); /* Nature background */
     background-size: cover;
-    color: white;
+    color: #fff;
     line-height: 1.6;
 }
 
 .container {
     width: 80%;
     margin: auto;
-    padding: 30px 0;
+    overflow: hidden;
 }
 
+/* Header Section */
 header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px 0;
     text-align: center;
-    padding: 50px 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-bottom: 2px solid #ccc;
 }
 
 header h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
+    color: #ffcc00;
+    margin: 0;
+    font-size: 36px;
 }
 
 header p {
-    font-size: 1.2em;
+    font-size: 18px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    background-color: #5cb85c;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-    border-radius: 5px;
-}
-
-.btn:hover {
-    background-color: #4cae4c;
-}
-
-section {
-    padding: 60px 0;
-}
-
+/* Section Titles */
 h2 {
-    font-size: 2.5em;
+    font-size: 28px;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
+/* Content Sections */
+section {
+    padding: 40px 0;
 }
 
-.skill-card {
-    background-color: rgba(0, 0, 0, 0.7);
+.contact-info, .projects, .publications, .skills, .education, .experience {
+    background: rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
     padding: 20px;
-    border-radius: 10px;
-    text-align: center;
+    border-radius: 8px;
 }
 
-.project ul {
-    margin-top: 10px;
+/* General Text Styles */
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Projects Section */
+.projects ul, .publications ul {
+    list-style-type: none;
     padding-left: 20px;
 }
 
+.projects li, .publications li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.7);
     padding: 20px 0;
-    color: #ccc;
+    background-color: #333;
+    color: #fff;
 }
 
 footer p {
-    font-size: 1.1em;
-}
-
-footer a {
-    color: #5cb85c;
-    text-decoration: none;
+    margin: 0;
+    font-size: 16px;
 }
