@@ -45,6 +45,14 @@ header {
     background-repeat: no-repeat;
 }
 
+/* Header Text Container */
+header .text-container {
+    background: transparent; /* Remove any background */
+    box-shadow: none; /* Remove box shadow */
+    padding: 0; /* Remove padding */
+}
+
+/* Main Heading (Name) */
 header h1 {
     font-size: 3.5em;
     font-weight: bold; /* Bold text */
@@ -53,6 +61,7 @@ header h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow for contrast */
 }
 
+/* Subheading (Profession) */
 header p {
     font-size: 1.5em;
     font-weight: bold; /* Bold text */
