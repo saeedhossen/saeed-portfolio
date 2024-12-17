@@ -37,27 +37,28 @@ p, ul, li {
 /* Header Section */
 header {
     background-color: transparent; /* Make the background transparent */
-    color: #333; /* Dark text for contrast */
     text-align: center;
-    padding: 100px 20px; /* Ample padding for header */
-    border-radius: 12px 12px 0 0;
+    padding: 200px 20px 20px; /* More padding at the top for better visibility */
     background-image: url('https://raw.githubusercontent.com/saeedhossen/saeed-portfolio/refs/heads/main/b.jpg'); /* Correct raw image path */
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 header h1 {
     font-size: 3.5em;
-    margin-bottom: 20px;
-    color: #333; /* Dark text */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: bold; /* Bold text */
+    color: skyblue; /* Sky Blue color */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow for contrast */
 }
 
 header p {
-    font-size: 1.2em;
-    font-weight: 500;
-    color: #333;
+    font-size: 1.5em;
+    font-weight: bold; /* Bold text */
+    color: lemonchiffon; /* Lemon color */
     margin-top: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow for contrast */
 }
 
 /* Section Headings */
