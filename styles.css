@@ -3,32 +3,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
-/* Body and Global Styles */
 body {
     line-height: 1.6;
     color: #333;
     background-color: #f5f5f5; /* Light ash background */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Container */
 .container {
     width: 90%;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 40px;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
     background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Header Section with Background Image and Blackish Shadow */
 header {
-    background: url('https://github.com/saeedhossen/saeed-portfolio/blob/main/passport-photo%20_rakib-new.png') center/cover no-repeat; /* Replace with your image URL */
-    color: #fff;
+    background: url('passport-photo_rakib-new.png') center/cover no-repeat; /* Replace with the actual path of your image */
+    color: #fff; /* White text for contrast */
     text-align: center;
     padding: 100px 20px; /* Increased padding for a spacious header */
     border-radius: 0 0 12px 12px;
@@ -44,7 +42,7 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Black with transparency */
+    background-color: rgba(0, 0, 0, 0.5); /* Darker overlay for blackish effect */
     border-radius: 0 0 12px 12px;
     z-index: 0; /* Placed behind text */
 }
@@ -65,7 +63,7 @@ header h1:hover {
 header p {
     font-size: 1.3em;
     font-weight: 500;
-    color: #fff;
+    color: #fff; /* Ensuring paragraph text is white */
     z-index: 1;
     margin-top: 10px;
 }
@@ -73,9 +71,9 @@ header p {
 /* Section Headings */
 h2 {
     color: #6A6A6A; /* Dark Ash for section headings */
-    margin-bottom: 15px;
-    border-bottom: 3px solid #ddd;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
 }
 
 h3 {
@@ -85,12 +83,11 @@ h3 {
 
 /* Section Box Styling */
 .section-box {
-    padding: 20px;
-    background-color: #f8f8f8; /* Light gray background */
+    padding: 15px;
+    background-color: #fafafa; /* Light gray background */
     border: 1px solid #ddd;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 .section-box ul {
@@ -99,9 +96,8 @@ h3 {
 }
 
 .section-box li {
-    margin: 15px 0;
-    line-height: 1.6;
-    font-size: 1.1em;
+    margin: 10px 0;
+    line-height: 1.5;
 }
 
 .section-box a {
@@ -115,32 +111,31 @@ h3 {
     color: #FFB300; /* Slightly darker yellow when hovered */
 }
 
-/* About Me Section */
+/* About Me */
 #profile p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.8;
     color: #555;
-    margin-bottom: 20px;
 }
 
 /* Skills Section */
 #skills p {
     margin: 8px 0;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 #skills strong {
     color: #1e3a8a; /* Blue accent for skills */
 }
 
-/* Research Interests Section */
+/* Research Interests */
 #research-interests ul {
     list-style: disc;
     margin-left: 20px;
     color: #555;
 }
 
-/* Publications & Research Experiences Section */
+/* Publications & Research Experiences */
 #publications-research ul {
     list-style: none;
     margin-left: 0;
@@ -153,8 +148,7 @@ h3 {
 
 /* Contact Section */
 #contact p {
-    font-size: 1.2em;
-    margin-bottom: 15px;
+    font-size: 1.1em;
 }
 
 #contact a {
@@ -169,11 +163,11 @@ h3 {
 /* Footer Section */
 .footer {
     text-align: center;
-    padding: 15px 0;
-    margin-top: 50px;
-    background: #333; /* Dark footer background */
+    padding: 10px 0;
+    margin-top: 30px;
+    background: #6A6A6A; /* Dark Ash footer */
     color: #fff;
-    border-radius: 12px 12px 0 0;
+    border-radius: 8px 8px 0 0;
 }
 
 .footer a {
@@ -184,23 +178,4 @@ h3 {
 
 .footer a:hover {
     text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.5em;
-    }
-
-    header p {
-        font-size: 1.1em;
-    }
-
-    .container {
-        padding: 20px;
-    }
-
-    .section-box {
-        padding: 15px;
-    }
 }
