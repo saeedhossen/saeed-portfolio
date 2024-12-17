@@ -41,7 +41,7 @@ header {
     text-align: center;
     padding: 100px 20px; /* Ample padding for header */
     border-radius: 12px 12px 0 0;
-    background-image: url('https://raw.githubusercontent.com/saeedhossen/saeed-portfolio/refs/heads/main/a.jpg'); /* Correct raw image path */
+    background-image: url('https://raw.githubusercontent.com/saeedhossen/saeed-portfolio/refs/heads/main/b.jpg'); /* Correct raw image path */
     background-size: cover;
     background-position: center;
 }
