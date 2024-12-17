@@ -25,10 +25,10 @@ body {
 
 /* Header Section with Background Image and Blackish Shadow */
 header {
-    background: url('passport-photo_rakib-new.png') center/cover no-repeat; /* Replace with the actual path of your image */
+    background: url('passport-photo_rakib-new.png') center/cover no-repeat; /* Ensure the image path is correct */
     color: #fff; /* White text for contrast */
     text-align: center;
-    padding: 100px 20px; /* Increased padding for a spacious header */
+    padding: 100px 20px; /* Increased padding for better spacing */
     border-radius: 0 0 12px 12px;
     position: relative;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -42,17 +42,18 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Darker overlay for blackish effect */
+    background-color: rgba(0, 0, 0, 0.5); /* Darker overlay */
     border-radius: 0 0 12px 12px;
-    z-index: 0; /* Placed behind text */
+    z-index: 0; /* Positioned behind the text */
 }
 
+/* Header Text */
 header h1 {
     font-size: 3.5em;
     font-weight: 600;
     margin-bottom: 20px;
-    color: #fff; /* White text for contrast */
-    z-index: 1; /* Text above the overlay */
+    color: #fff; /* Ensure the text is white */
+    z-index: 1; /* Placed above the overlay */
     position: relative; /* Ensure it stays above overlay */
     transition: transform 0.3s ease;
 }
@@ -64,7 +65,7 @@ header h1:hover {
 header p {
     font-size: 1.3em;
     font-weight: 500;
-    color: #fff; /* Ensuring paragraph text is white */
+    color: #fff; /* White text */
     z-index: 1;
     margin-top: 10px;
     position: relative; /* Ensure it stays above overlay */
