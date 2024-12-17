@@ -3,70 +3,86 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 body {
     line-height: 1.6;
     color: #333;
-    background-color: #f5f5f5; /* Light ash background */
+    background-color: #f4f4f9; /* Light Ash background */
+}
+
+/* Global Styles */
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif; /* Modern font family for headings */
+    font-weight: 600;
+}
+
+p, ul, li {
+    font-family: 'Open Sans', sans-serif; /* Clean font for paragraphs and lists */
+    font-weight: 400;
 }
 
 /* Container */
 .container {
     width: 90%;
-    max-width: 1100px;
-    margin: 20px auto;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
     background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Header Section */
 header {
-    background-color: #f6f6b3; /* Lemonish background color */
+    background-color: #f6f6b3; /* Lemonish Background */
     color: #333; /* Dark text for contrast */
     text-align: center;
-    padding: 60px 20px; /* Increased padding for better spacing */
-    border-radius: 0 0 12px 12px;
+    padding: 100px 20px; /* Ample padding for header */
+    border-radius: 12px 12px 0 0;
+    background-image: url('your-image-path.jpg'); /* Background image path */
+    background-size: cover;
+    background-position: center;
 }
 
-/* Header Text */
 header h1 {
     font-size: 3.5em;
-    font-weight: bold;
     margin-bottom: 20px;
     color: #333; /* Dark text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 header p {
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 500;
-    color: #333; /* Dark text */
+    color: #333;
     margin-top: 10px;
 }
 
 /* Section Headings */
 h2 {
-    color: #6a6a6a; /* Dark Ash for section headings */
+    color: #333;
+    font-size: 2.5em;
     margin-bottom: 10px;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 3px solid #f6f600; /* Lemonish underline */
     padding-bottom: 5px;
 }
 
 h3 {
-    color: #444; /* Dark color for sub-headings */
-    margin: 10px 0;
+    color: #444;
+    margin: 20px 0;
+    font-size: 1.8em;
 }
 
 /* Section Box Styling */
 .section-box {
-    padding: 15px;
-    background-color: #fafafa; /* Light gray background */
+    padding: 30px;
+    background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 .section-box ul {
@@ -75,43 +91,77 @@ h3 {
 }
 
 .section-box li {
-    margin: 10px 0;
-    line-height: 1.5;
+    margin: 12px 0;
+    line-height: 1.8;
 }
 
 .section-box a {
     text-decoration: none;
     color: #f6f600; /* Lemonish link color */
     font-weight: bold;
+    transition: color 0.3s ease-in-out;
 }
 
 .section-box a:hover {
     text-decoration: underline;
-    color: #ffb300; /* Slightly darker yellow when hovered */
+    color: #ffb300; /* Darker yellow on hover */
 }
 
-/* About Me */
+/* About Me Section */
 #profile p {
-    font-size: 1.1em;
+    font-size: 1.2em;
     line-height: 1.8;
     color: #555;
+    margin: 20px 0;
 }
 
 /* Skills Section */
 #skills p {
-    margin: 8px 0;
-    font-size: 1em;
+    margin: 12px 0;
+    font-size: 1.1em;
 }
 
 #skills strong {
     color: #333; /* Black for bold text */
 }
 
-/* Research Interests */
+.skill-progress-bar {
+    width: 100%;
+    background-color: #f1f1f1;
+    border-radius: 12px;
+    margin: 10px 0;
+}
+
+.skill-progress-bar div {
+    height: 8px;
+    border-radius: 12px;
+}
+
+.skill-html {
+    width: 90%;
+    background-color: #f6f600; /* Lemonish color */
+}
+
+.skill-css {
+    width: 80%;
+    background-color: #6a6a6a; /* Ash color */
+}
+
+.skill-js {
+    width: 75%;
+    background-color: #333; /* Dark gray */
+}
+
+/* Research Interests Section */
 #research-interests ul {
     list-style: disc;
     margin-left: 20px;
     color: #555;
+}
+
+#research-interests li {
+    margin-bottom: 12px;
+    font-size: 1.2em;
 }
 
 /* Publications & Research Experiences */
@@ -121,40 +171,70 @@ h3 {
 }
 
 #publications-research li {
-    margin-bottom: 12px;
+    margin-bottom: 15px;
+    font-size: 1.1em;
     line-height: 1.6;
 }
 
 /* Contact Section */
 #contact p {
-    font-size: 1.1em;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 #contact a {
-    color: #f6f600; /* Lemonish link color */
+    color: #f6f600;
     text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
 }
 
 #contact a:hover {
+    color: #ffb300;
     text-decoration: underline;
 }
 
 /* Footer Section */
 .footer {
     text-align: center;
-    padding: 10px 0;
-    margin-top: 30px;
+    padding: 20px;
     background: #6a6a6a; /* Dark Ash footer */
     color: #fff;
-    border-radius: 8px 8px 0 0;
+    border-radius: 0 0 12px 12px;
+    margin-top: 30px;
 }
 
 .footer a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .footer a:hover {
     text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 60px 20px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .section-box {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
 }
