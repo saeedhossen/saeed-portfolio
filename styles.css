@@ -50,6 +50,7 @@ header .text-container {
     background: transparent; /* Remove any background */
     box-shadow: none; /* Remove box shadow */
     padding: 0; /* Remove padding */
+    margin: 0;
 }
 
 /* Main Heading (Name) */
