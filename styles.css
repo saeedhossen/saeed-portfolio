@@ -47,7 +47,6 @@ header h1 {
     font-size: 3.5em;
     font-weight: bold;
     color: skyblue; /* Updated color */
-  /*  margin-bottom: 5px;*/
     margin-top: 120px; /* Increased margin-top to move heading lower */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add contrast */
 }
@@ -73,7 +72,7 @@ h2 {
 h3 {
     color: #444;
     margin: 20px 0;
-    font-size: 1.1em;
+    font-size: 1em; /* Decreased font size for h3 under publications and research */
 }
 
 /* Section Box Styling */
@@ -172,6 +171,9 @@ h3 {
     color: #fff;
     border-radius: 0 0 12px 12px;
     margin-top: 30px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer a {
