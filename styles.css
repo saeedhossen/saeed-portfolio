@@ -48,6 +48,7 @@ header h1 {
     font-weight: bold;
     color: skyblue; /* Updated color */
     margin-bottom: 5px;
+    margin-top: 50px; /* Increased margin-top to move heading lower */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add contrast */
 }
 
