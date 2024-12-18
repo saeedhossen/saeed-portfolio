@@ -41,17 +41,17 @@
                     <li>
                         <strong>Ahsanullah University of Science and Technology</strong><br>
                         B.Sc. Eng. in Electrical and Electronics Engineering<br>
-                        CGPA: 3.693 on a scale of 4.00
+                        CGPA: 3.693/4.00
                     </li>
                     <li>
                         <strong>Milestone College</strong><br>
                         Higher Secondary Certificate Examination<br>
-                        GPA: 5.00 on a scale of 5.00
+                        GPA: 5.00/5.00
                     </li>
                     <li>
                         <strong>Galachipa Govt. Model Secondary School</strong><br>
                         Secondary School Certificate Examination<br>
-                        GPA: 5.00 on a scale of 5.00
+                        GPA: 5.00/5.00
                     </li>
                 </ul>
             </div>
@@ -73,86 +73,121 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="section-box">
-                <h3>Project 1: Vitality and Productivity Monitoring IP</h3>
-                <p><strong>Specifications:</strong> PDK: 5nm, Frequency: 2 GHz, Inst Count: 150K, Macros: 30</p>
-                <ul>
-                    <li>Responsible for Synthesis, Macro Placement, Power Planning, Physical Verification (DRC), RC Extraction, and Power Analysis.</li>
-                    <li>Developed a stapling-based PG script to mitigate routing congestions.</li>
-                    <li>Analyzed Calibre reports and resolved DRC violations.</li>
-                </ul>
-            </div>
+<section id="projects">
+    <div class="container">
+        <h2>Projects</h2>
 
-            <div class="section-box">
-                <h3>Project 2: Performance and Reliability Checker IP</h3>
-                <p><strong>Specifications:</strong> PDK: 6nm, Frequency: 2 GHz, Inst Count: 150K, Macros: 20</p>
-                <ul>
-                    <li>Full RTL to sign-off including DFT scan insertion, macro placement, and power planning.</li>
-                    <li>Resolved timing violations using buffer insertion and adjusted port placements.</li>
-                </ul>
-            </div>
-
-            <div class="section-box">
-                <h3>Project 3: 32-Bit RISC-V Processor IP Development</h3>
-                <p><strong>Specifications:</strong> PDK: 45nm, Frequency: 555 MHz, Inst Count: 11K</p>
-                <ul>
-                    <li>Responsible for Synthesis, Floor-Planning, Placement, CTS, and Routing.</li>
-                    <li>Debugged scan flop conversion issues and resolved timing violations.</li>
-                </ul>
-            </div>
-
-            <div class="section-box">
-                <h3>Project 4: Graphics Processing Unit Development</h3>
-                <p><strong>Specifications:</strong> PDK: 65nm/45nm, Frequency: 350 MHz, Inst Count: 241K</p>
-                <ul>
-                    <li>Implemented NDR on CTS nets and optimized timing slack by cell swaps.</li>
-                </ul>
-            </div>
-
-            <div class="section-box">
-                <h3>Project 5: Memory Management Unit Design</h3>
-                <p><strong>Specifications:</strong> PDK: 45nm, Frequency: 1 GHz, Inst Count: 10.5K</p>
-                <ul>
-                    <li>Implemented SDP-based placement strategy and optimized power using Voltus.</li>
-                </ul>
-            </div>
-
-            <div class="section-box">
-                <h3>Project 6: Advanced MCU with RISC-V Compatibility</h3>
-                <p><strong>Specifications:</strong> PDK: 45nm/65nm, Frequency: 250 MHz, Inst Count: 177K</p>
-                <ul>
-                    <li>Developed spare modules scripts and resolved timing violations using Tempus eco.</li>
-                </ul>
-            </div>
-
-            <div class="section-box">
-                <h3>Project 7: Customized ASIC - Empowering Specific Functionality</h3>
-                <p><strong>Specifications:</strong> PDK: 45nm, Frequency: 25 MHz, Inst Count: 63.5K, Macros: 29</p>
-                <ul>
-                    <li>Developed power plan scripts and debugged macro placement issues.</li>
-                </ul>
-            </div>
-
-            <div class="section-box">
-                <h3>Project 8: PPA Improvements using Open ROAD Flow</h3>
-                <p><strong>Specifications:</strong> PDK: ASAP7nm, Frequency: 777 MHz, Inst Count: 18K</p>
-                <ul>
-                    <li>Enhanced timing by adjusting CTS and routing attributes.</li>
-                </ul>
-            </div>
-
-            <div class="section-box">
-                <h3>Project 9: Flow Development of Implementation Stages</h3>
-                <ul>
-                    <li>Developed, debugged, and automated PVS flows for sign-off analysis.</li>
-                    <li>Ensured smooth integration of various implementation stages.</li>
-                </ul>
-            </div>
+        <div class="section-box">
+            <h3>Project 1: Vitality and Productivity Monitoring IP</h3>
+            <p><strong>Specifications:</strong> PDK: 5nm, Frequency: 2 GHz, Inst Count: 150K, Macros: 30</p>
+            <ul>
+                <li>Responsible for Synthesis, Macro Placement, Power Planning, Physical Verification (DRC), RC Extraction, and Power Analysis.</li>
+                <li>Placed macros using the toolbox to ensure all were on the grid, avoiding grid-related violations.</li>
+                <li>Developed a stapling-based PG script to mitigate routing congestions.</li>
+                <li>Analyzed the Calibre report to identify the root cause of DRC violations.</li>
+                <li>Prepared multiple scripts to resolve DRC issues such as base layer, patch wire, DECAP cell, macro grid alignment, spacing, and metal density-related DRC violations.</li>
+                <li>Modified the power plan after debugging the Redhawk report to address power consumption issues in the design.</li>
+            </ul>
         </div>
-    </section>
+
+        <div class="section-box">
+            <h3>Project 2: Performance and Reliability Checker IP</h3>
+            <p><strong>Specifications:</strong> PDK: 6nm, Frequency: 2 GHz, Inst Count: 150K, Macros: 20</p>
+            <ul>
+                <li>Responsible for full RTL to Sign-off including Synthesis, DFT scan insertion, Macro Placement, Power Planning, Physical Verification (DRC), RC Extraction, and Power Analysis.</li>
+                <li>Placed macros on the grid, maintained distance between them, inserted blockages in gaps between macros, and added halos around macros to prevent congestion.</li>
+                <li>Analyzed timing paths and strategically adjusted port placement, performed cell swapping, and inserted buffers using Primetime ECO to resolve timing violations.</li>
+                <li>Addressed DRC violations such as passive fill, trim layer, VT mismatch, shorts, area, and spacing-related issues.</li>
+                <li>Analyzed static and dynamic power reports, resolved issues by adjusting the power plan, and placed blockages to isolate cells consuming more power.</li>
+            </ul>
+        </div>
+
+        <div class="section-box">
+            <h3>Project 3: 32-Bit RISC-V Processor IP Development</h3>
+            <p><strong>Specifications:</strong> PDK: 45nm, Frequency: 555 MHz, Inst Count: 11K</p>
+            <ul>
+                <li>Responsible for full RTL to Sign-off including Synthesis, Floor-Plan, Placement, CTS, Routing & PV.</li>
+                <li>Debugged scan flop conversion issues during synthesis & fixed automatic buffer insertion on open ports.</li>
+                <li>Analyzed and resolved DRV & timing violations by modifying port placement & skew adjustments.</li>
+                <li>Debugged and resolved different DRC issues like minimum spacing, minimum area, and Parallelrunlength on the design.</li>
+            </ul>
+        </div>
+
+        <div class="section-box">
+            <h3>Project 4: Graphics Processing Unit Development</h3>
+            <p><strong>Specifications:</strong> PDK: 65nm/45nm, Frequency: 350 MHz, Inst Count: 241K</p>
+            <ul>
+                <li>Responsible for Synthesis, Floor-Plan, Placement, CTS, Routing, PV & Timing.</li>
+                <li>Developed scripts for controlled VT cell usage in the synthesis stage.</li>
+                <li>Implemented NDR on CTS nets as per specifications.</li>
+                <li>Identified and addressed various DRC issues for improved design efficiency.</li>
+                <li>Minimized negative timing slack using a different approach like cell swap.</li>
+            </ul>
+        </div>
+
+        <div class="section-box">
+            <h3>Project 5: Memory Management Unit Design</h3>
+            <p><strong>Specifications:</strong> PDK: 45nm, Frequency: 1 GHz, Inst Count: 10.5K</p>
+            <ul>
+                <li>Responsible for full RTL to Sign-off including Synthesis, Floor-Plan, Placement, CTS, Routing & Power Analysis.</li>
+                <li>Addressed pin overlap issues and adjusted pin placement script.</li>
+                <li>Implemented an SDP-based placement strategy.</li>
+                <li>Analyzed static and dynamic powers using Voltus for design improvements and issue resolution.</li>
+            </ul>
+        </div>
+
+        <div class="section-box">
+            <h3>Project 6: Advanced MCU with RISC-V Compatibility</h3>
+            <p><strong>Specifications:</strong> PDK: 45nm/65nm, Frequency: 250 MHz, Inst Count: 177K</p>
+            <ul>
+                <li>Responsible for Synthesis, Floor-Plan, Placement, CTS, Routing & Timing.</li>
+                <li>Resolved various flow-related issues and adjusted flow scripts.</li>
+                <li>Developed scripts for creating spare modules and placed them in specific areas based on specifications.</li>
+                <li>Analyzed different timing paths and resolved violations.</li>
+                <li>Debugged timing issues and performed Tempus ECO to resolve violations.</li>
+            </ul>
+        </div>
+
+        <div class="section-box">
+            <h3>Project 7: Customized ASIC - Empowering Specific Functionality</h3>
+            <p><strong>Specifications:</strong> PDK: 45nm, Frequency: 25 MHz, Inst Count: 63.5K, Macros: 29</p>
+            <ul>
+                <li>Responsible for Synthesis, Floor-Plan, Placement, CTS, Routing, PV & Timing.</li>
+                <li>Debugged and resolved all flow-related issues for successful PD implementation.</li>
+                <li>Developed custom scripts for relative macro placement & completed pin placement based on specification.</li>
+                <li>Created power plan scripts to ensure proper power stripe connection.</li>
+                <li>Analyzed timing paths and strategically modified macro placement to resolve violations.</li>
+                <li>Implemented different types of blockages to prevent routing congestions.</li>
+            </ul>
+        </div>
+
+        <div class="section-box">
+            <h3>Project 8: PPA Improvements using Open ROAD Flow</h3>
+            <p><strong>Specifications:</strong> PDK: ASAP7nm, Frequency: 777 MHz, Inst Count: 18K</p>
+            <ul>
+                <li>Responsible for synthesis, floor-planning, placement, CTS, routing, and DRC.</li>
+                <li>Used SLVT, LVT, or RVT cells during synthesis with various optimization switches and attributes.</li>
+                <li>Enhanced timing and performance by adjusting clock routing layers, CTS cell lists, cluster size, diameter settings, and routing layer attributes.</li>
+                <li>Integrated Klayout with Open ROAD flow to report DRC violations post-route for ASAP7 PDK.</li>
+            </ul>
+        </div>
+
+        <div class="section-box">
+            <h3>Project 9: Flow Development of Implementation Stages</h3>
+            <ul>
+                <li>Responsible for Flow Development and Verification.</li>
+                <li>Developed, debugged, and verified the PVS flow for comprehensive signoff analysis.</li>
+                <li>Addressed areas requiring fixing during flow verification.</li>
+                <li>Modified the existing Physical Design flow and automated it to minimize user intervention for complete flow runs.</li>
+                <li>Implemented changes to flow scripts to accommodate evolving project requirements.</li>
+                <li>Ensured smooth integration of various stages in the implementation flow.</li>
+                <li>Analyzed and resolved any issues related to the overall design flow, ensuring its efficiency and effectiveness.</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
 
     <!-- Research Interests Section -->
     <section id="research-interests">
