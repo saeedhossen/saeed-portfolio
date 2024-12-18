@@ -215,8 +215,6 @@ h3 {
 }
 
 /* Project Details Section */
-/* Project Details Section */
-/* Project Details Section */
 .project-details {
     max-height: 0; /* Fully hidden by default */
     padding: 0; /* No padding when hidden */
@@ -228,29 +226,19 @@ h3 {
 }
 
 .project-details.show {
-    max-height: 500px; /* Adjust to fit content or use 'auto' */
+    max-height: 500px; /* Adjust to fit content */
     padding: 10px; /* Add padding when visible */
 }
+
 .project-name {
     cursor: pointer;
     color: #f6f600; /* Lemonish color */
     font-weight: bold;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .project-name:hover {
     text-decoration: underline;
+    color: #ffb300;
+    transform: scale(1.05);
 }
-
-/* Hover Effects */
-.project-name:hover, .footer a {
-    text-decoration: underline;
-    transform: scale(1.1);
-}
-
-/* JavaScript function to toggle project details visibility */
-document.querySelectorAll('.project-name').forEach(item => {
-    item.addEventListener('click', event => {
-        const projectDetails = event.target.nextElementSibling;
-        projectDetails.classList.toggle('show');
-    });
-});
