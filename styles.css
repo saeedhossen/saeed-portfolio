@@ -234,15 +234,15 @@ h3 {
 /* Project Name */
 .project-name {
     cursor: pointer;
-    color: skyblue; /* Updated color to Skyblue */
+    color: blue; /* Updated color to Skyblue */
     font-weight: bold;
-    margin-bottom: 4px; /* Decreased the distance between project names */
+    margin-bottom: 0; /* Further decreased the distance between project names */
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .project-name:hover {
     text-decoration: underline;
-    color: #b0b0b0; /* Hover color set to Ash-like gray */
+    color: skyblue; /* Hover color set to Orange */
     transform: scale(1.05);
 }
 
