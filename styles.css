@@ -152,14 +152,14 @@ h3 {
 }
 
 #contact a {
-    color: blue; /* Changed to blue */
+    color: #ff6600; /* Orange color for hover effect */
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease-in-out;
 }
 
 #contact a:hover {
-    color: skyblue; /* Hover color changed to skyblue */
+    color: #f6f600; /* Lemonish yellow color */
     text-decoration: underline;
 }
 
@@ -234,16 +234,17 @@ h3 {
 /* Project Name */
 .project-name {
     cursor: pointer;
-    color: blue;  
+    color: #ff6600; /* Orange color for hover effect */
     font-weight: bold;
     margin-bottom: 0; /* Ensure no margin between project names */
     padding: 0; /* Make sure padding doesn't add extra space */
+    display: block; /* Ensures each project name is on a new line */
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .project-name:hover {
     text-decoration: underline;
-    color: skyblue; 
+    color: #f6f600; /* Lemonish yellow color */
     transform: scale(1.05);
 }
 
