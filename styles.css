@@ -47,8 +47,8 @@ header h1 {
     font-size: 3.5em;
     font-weight: bold;
     color: skyblue; /* Updated color */
-    margin-bottom: 5px;
-    margin-top: 50px; /* Increased margin-top to move heading lower */
+  /*  margin-bottom: 5px;*/
+    margin-top: 80px; /* Increased margin-top to move heading lower */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add contrast */
 }
 
@@ -73,7 +73,7 @@ h2 {
 h3 {
     color: #444;
     margin: 20px 0;
-    font-size: 1.1em;
+    font-size: 1.45em;
 }
 
 /* Section Box Styling */
