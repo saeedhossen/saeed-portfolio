@@ -7,11 +7,7 @@ projectNames.forEach(project => {
         // Get the corresponding project details
         const projectDetails = project.nextElementSibling;
 
-        // Toggle the display of the project details
-        if (projectDetails.style.display === 'none' || projectDetails.style.display === '') {
-            projectDetails.style.display = 'block';
-        } else {
-            projectDetails.style.display = 'none';
-        }
+        // Toggle the 'active' class to show or hide the project details
+        projectDetails.classList.toggle('active');
     });
 });
