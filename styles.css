@@ -29,29 +29,17 @@ p, ul, li {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background: none; /* Ensure no background */
-    border-radius: 12px;
-    box-shadow: none; /* Remove shadow */
 }
 
 /* Header Section */
 header {
-    background-color: transparent !important; /* Transparent header */
+    background-color: transparent !important;
     text-align: center;
-    padding: 200px 20px 20px; /* More padding at the top */
+    padding: 200px 20px 20px;
     background-image: url('https://raw.githubusercontent.com/saeedhossen/saeed-portfolio/refs/heads/main/b.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-/* Header Text Container */
-header .text-container,
-header .text-container * {
-    background: none !important; /* Remove all backgrounds */
-    box-shadow: none !important; /* Remove all shadows */
-    padding: 0 !important;
-    margin: 0 !important;
 }
 
 /* Main Heading (Name) */
@@ -90,10 +78,9 @@ h3 {
 /* Section Box Styling */
 .section-box {
     padding: 30px;
-    background: none; /* Remove background */
-    border: none; /* Remove border */
+    background: none;
+    border: none;
     margin-bottom: 30px;
-    box-shadow: none; /* Remove box shadow */
 }
 
 /* Skills Section */
@@ -103,7 +90,7 @@ h3 {
 }
 
 #skills strong {
-    color: #333; /* Black for bold text */
+    color: #333;
 }
 
 .skill-progress-bar {
@@ -180,7 +167,7 @@ h3 {
 .footer {
     text-align: center;
     padding: 20px;
-    background: #6a6a6a; /* Dark Ash footer */
+    background: #6a6a6a;
     color: #fff;
     border-radius: 0 0 12px 12px;
     margin-top: 30px;
