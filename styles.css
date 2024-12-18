@@ -159,7 +159,7 @@ h3 {
 }
 
 #contact a:hover {
-    color: #f6f600; /* Lemonish yellow color */
+    color: skyblue; /* Lemonish yellow color */
     text-decoration: underline;
 }
 
@@ -215,7 +215,7 @@ h3 {
 
 .project-name:hover {
     text-decoration: underline;
-    color: #f6f600; /* Lemonish yellow color on hover */
+    color: skyblue; /* Lemonish yellow color on hover */
     transform: scale(1.05);
 }
 
