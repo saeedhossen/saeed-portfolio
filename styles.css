@@ -72,7 +72,7 @@ h2 {
 h3 {
     color: #444;
     margin: 20px 0;
-    font-size: 1em; /* Decreased font size for h3 under publications and research */
+    font-size: 1.6em; /* Decreased font size for h3 under publications and research */
 }
 
 /* Section Box Styling */
@@ -165,7 +165,7 @@ h3 {
 
 /* Footer Section */
 .footer {
-    text-align: center;
+    text-align: right;
     padding: 20px;
     background: #6a6a6a;
     color: #fff;
