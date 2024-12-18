@@ -29,46 +29,47 @@ p, ul, li {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background: #fff;
+    background: none; /* Ensure no background */
     border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: none; /* Remove shadow */
 }
 
 /* Header Section */
 header {
-    background-color: transparent; /* Make the background transparent */
+    background-color: transparent !important; /* Transparent header */
     text-align: center;
-    padding: 200px 20px 20px; /* More padding at the top for better visibility */
-    background-image: url('https://raw.githubusercontent.com/saeedhossen/saeed-portfolio/refs/heads/main/b.jpg'); /* Correct raw image path */
+    padding: 200px 20px 20px; /* More padding at the top */
+    background-image: url('https://raw.githubusercontent.com/saeedhossen/saeed-portfolio/refs/heads/main/b.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 /* Header Text Container */
-header .text-container {
-    background: transparent; /* Remove any background */
-    box-shadow: none; /* Remove box shadow */
-    padding: 0; /* Remove padding */
-    margin: 0;
+header .text-container,
+header .text-container * {
+    background: none !important; /* Remove all backgrounds */
+    box-shadow: none !important; /* Remove all shadows */
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 /* Main Heading (Name) */
 header h1 {
     font-size: 3.5em;
-    font-weight: bold; /* Bold text */
-    color: skyblue; /* Sky Blue color */
+    font-weight: bold;
+    color: skyblue;
     margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add contrast */
 }
 
 /* Subheading (Profession) */
 header p {
     font-size: 1.5em;
-    font-weight: bold; /* Bold text */
-    color: lemonchiffon; /* Lemon color */
+    font-weight: bold;
+    color: lemonchiffon;
     margin-top: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Section Headings */
@@ -89,41 +90,10 @@ h3 {
 /* Section Box Styling */
 .section-box {
     padding: 30px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 12px;
+    background: none; /* Remove background */
+    border: none; /* Remove border */
     margin-bottom: 30px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-}
-
-.section-box ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.section-box li {
-    margin: 12px 0;
-    line-height: 1.8;
-}
-
-.section-box a {
-    text-decoration: none;
-    color: #f6f600; /* Lemonish link color */
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-}
-
-.section-box a:hover {
-    text-decoration: underline;
-    color: #ffb300; /* Darker yellow on hover */
-}
-
-/* About Me Section */
-#profile p {
-    font-size: 1.2em;
-    line-height: 1.8;
-    color: #555;
-    margin: 20px 0;
+    box-shadow: none; /* Remove box shadow */
 }
 
 /* Skills Section */
