@@ -33,7 +33,7 @@ p, ul, li {
 
 /* Header Section */
 header {
-    background-color: transparent !important;
+    background-color: transparent;
     text-align: center;
     padding: 200px 20px 20px;
     background-image: url('https://raw.githubusercontent.com/saeedhossen/saeed-portfolio/refs/heads/main/b.jpg');
@@ -177,10 +177,13 @@ h3 {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .footer a:hover {
+    color: #ffb300;
     text-decoration: underline;
+    transform: scale(1.1);
 }
 
 /* Responsive Design */
@@ -205,4 +208,48 @@ h3 {
     h2 {
         font-size: 2em;
     }
+
+    p, li {
+        font-size: 1.1em; /* Slightly larger body text for mobile */
+    }
 }
+
+/* Project Details Section */
+.project-details {
+    display: none; /* Hide project details by default */
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: max-height 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.project-details.show {
+    max-height: 500px; /* or auto depending on content */
+}
+
+.project-name {
+    cursor: pointer;
+    color: #f6f600; /* Lemonish color */
+    font-weight: bold;
+}
+
+.project-name:hover {
+    text-decoration: underline;
+}
+
+/* Hover Effects */
+.project-name:hover, .footer a {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+/* JavaScript function to toggle project details visibility */
+document.querySelectorAll('.project-name').forEach(item => {
+    item.addEventListener('click', event => {
+        const projectDetails = event.target.nextElementSibling;
+        projectDetails.classList.toggle('show');
+    });
+});
