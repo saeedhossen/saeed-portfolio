@@ -216,11 +216,11 @@ h3 {
 
 /* Project Details Section */
 /* Project Details Section */
+/* Project Details Section */
 .project-details {
-    display: block; /* Keep block display for transition effects */
     max-height: 0; /* Fully hidden by default */
-    padding: 0; /* Remove padding when hidden */
-    overflow: hidden;
+    padding: 0; /* No padding when hidden */
+    overflow: hidden; /* Hide content that overflows */
     background-color: #f9f9f9;
     margin-top: 10px;
     border-radius: 5px;
@@ -228,10 +228,9 @@ h3 {
 }
 
 .project-details.show {
-    max-height: 500px; /* Set the max height for visible details */
-    padding: 10px; /* Restore padding when visible */
+    max-height: 500px; /* Adjust to fit content or use 'auto' */
+    padding: 10px; /* Add padding when visible */
 }
-
 .project-name {
     cursor: pointer;
     color: #f6f600; /* Lemonish color */
