@@ -152,16 +152,17 @@ h3 {
 }
 
 #contact a {
-    color: skyblue; /* Changed to Skyblue */
+    color: blue; /* Changed to blue */
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease-in-out;
 }
 
 #contact a:hover {
-    color: orange; /* Hover color changed to Orange */
+    color: skyblue; /* Hover color changed to skyblue */
     text-decoration: underline;
 }
+
 
 /* Footer Section */
 .footer {
