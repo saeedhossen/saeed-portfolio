@@ -51,6 +51,10 @@ header h1 {
     color: skyblue; /* Updated color */
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add contrast */
+    position: absolute;
+    bottom: 40px; /* Adjust distance from the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
 }
 
 /* Subheading (Profession) */
@@ -60,6 +64,10 @@ header p {
     color: lemonchiffon;
     margin-top: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 10px; /* Adjust distance from the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
 }
 
 
