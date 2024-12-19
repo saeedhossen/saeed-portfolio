@@ -46,21 +46,32 @@ header {
 }
 
 /* Main Heading (Name) */
+/* Main Heading (Name) */
 header h1 {
     font-size: 3.5em;
     font-weight: bold;
-    color:skyblue; /* Professional orange color */
-    margin-top: 120px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add contrast */
+    color: skyblue; /* Sky blue color */
+    margin-top: 0; /* Removed margin to center vertically */
+    text-align: center; /* Center align the text horizontally */
+    position: absolute; /* Use absolute positioning to center it */
+    top: 50%; /* Position vertically in the middle */
+    left: 50%; /* Position horizontally in the middle */
+    transform: translate(-50%, -50%); /* Adjust for exact center alignment */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6); /* Blackish/ash effect */
 }
 
 /* Subheading (Profession) */
 header p {
     font-size: 1.5em;
     font-weight: bold;
-    color: #ff6600; /* Professional orange color */
+    color: #ff6600; /* Orange color */
     margin-top: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center; /* Center align the text horizontally */
+    position: absolute; /* Use absolute positioning to position below h1 */
+    top: 60%; /* Position just below the h1 */
+    left: 50%; /* Position horizontally in the middle */
+    transform: translateX(-50%); /* Adjust for horizontal center alignment */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6); /* Blackish/ash effect */
 }
 
 /* Section Headings */
