@@ -34,6 +34,7 @@ p, ul, li {
     align-items: flex-start; /* Adjusted for left-alignment */
 }
 
+/* Header Section */
 header {
     background-color: transparent;
     text-align: center;
@@ -42,6 +43,8 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative; /* Ensure the absolute positioning works */
+    height: 400px; /* Set height for header */
 }
 
 /* Main Heading (Name) */
@@ -52,7 +55,7 @@ header h1 {
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add contrast */
     position: absolute;
-    bottom: 40px; /* Adjust distance from the bottom */
+    bottom: 50px; /* Adjust distance from the bottom */
     left: 50%;
     transform: translateX(-50%); /* Center horizontally */
 }
@@ -69,7 +72,6 @@ header p {
     left: 50%;
     transform: translateX(-50%); /* Center horizontally */
 }
-
 
 /* Section Headings */
 h2 {
