@@ -3,26 +3,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
     line-height: 1.6;
-    color: #fff; /* White text color */
-    background-color: #1c1c1c; /* Dark ash/blackish background */
+    color: #f5f5f5; /* Light text for dark background */
+    background-color: #121212; /* Dark background */
 }
 
 /* Global Styles */
 h1, h2, h3 {
-    font-family: 'Roboto', sans-serif; /* Modern font family for headings */
+    font-family: 'Montserrat', sans-serif; /* Elegant font family for headings */
     font-weight: 600;
-    color: #f6f600; /* Lemonish yellow for headings */
+    color: #e0e0e0; /* Light gray for headings */
 }
 
 p, ul, li {
-    font-family: 'Open Sans', sans-serif; /* Clean font for paragraphs and lists */
+    font-family: 'Roboto', sans-serif; /* Clean font for paragraphs and lists */
     font-weight: 400;
-    color: #ddd; /* Light gray for text */
+    color: #cccccc; /* Softer text color */
 }
 
 /* Container */
@@ -33,7 +33,7 @@ p, ul, li {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-start; /* Adjusted for left-alignment */
 }
 
 /* Header Section */
@@ -45,57 +45,59 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative;
-    height: 400px;
+    position: relative; /* Ensure the absolute positioning works */
+    height: 400px; /* Set height for header */
 }
 
 /* Main Heading (Name) */
 header h1 {
     font-size: 3.5em;
     font-weight: bold;
-    color: #f6f600; /* Lemonish yellow */
+    color: #90caf9; /* Soft blue for text */
     margin-bottom: 10px;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6), 0px 0px 25px rgba(246, 246, 0, 0.5); /* Stronger shadow with glow */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6), 0px 0px 25px rgba(144, 202, 249, 0.5); /* Stronger shadow with glow */
     position: absolute;
-    bottom: 50px;
+    bottom: 50px; /* Adjust distance from the bottom */
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); /* Center horizontally */
 }
 
 /* Subheading (Profession) */
 header p {
     font-size: 1.5em;
     font-weight: bold;
-    color: #ff6600; /* Orange */
+    color: #81c784; /* Soft green for subheading */
     margin-top: 10px;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6), 0px 0px 20px rgba(255, 102, 0, 0.5);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6), 0px 0px 20px rgba(129, 199, 132, 0.5); /* Stronger shadow with glow */
     position: absolute;
-    bottom: 10px;
+    bottom: 10px; /* Adjust distance from the bottom */
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); /* Center horizontally */
 }
 
 /* Section Headings */
 h2 {
+    color: #eeeeee;
     font-size: 2.5em;
     margin-bottom: 10px;
-    border-bottom: 3px solid #f6f600; /* Lemonish underline */
+    border-bottom: 3px solid #90caf9; /* Blue underline */
     padding-bottom: 5px;
 }
 
 h3 {
+    color: #e0e0e0;
     margin: 20px 0;
     font-size: 1.4em;
-    color: #f6f600;
 }
 
 /* Section Box Styling */
 .section-box {
     padding: 30px;
-    background: #2a2a2a; /* Slightly lighter black */
-    border-radius: 8px;
+    background: #1e1e1e; /* Darker section background */
+    border: 1px solid #333;
     margin-bottom: 30px;
     width: 100%;
+    border-radius: 8px;
 }
 
 /* Education, Work Experience, Honors and Awards Sections */
@@ -107,29 +109,38 @@ h3 {
 }
 
 #education h3, #work-experience h3, #honors-awards h3 {
+    color: #e0e0e0;
     font-size: 1.6em;
     margin-bottom: 12px;
+    padding: 0;
 }
 
 #education p, #work-experience p, #honors-awards p {
     font-size: 1.1em;
     line-height: 1.6;
-    color: #ccc;
+    color: #bdbdbd;
+}
+
+#education .details, #work-experience .details, #honors-awards .details {
+    font-size: 1.1em;
+    margin-bottom: 12px;
+    line-height: 1.6;
 }
 
 /* Skills Section */
 #skills p {
     margin: 12px 0;
     font-size: 1.1em;
+    color: #bdbdbd;
 }
 
 #skills strong {
-    color: #f6f600;
+    color: #f5f5f5;
 }
 
 .skill-progress-bar {
     width: 100%;
-    background-color: #444; /* Dark gray background */
+    background-color: #333;
     border-radius: 12px;
     margin: 10px 0;
 }
@@ -141,24 +152,24 @@ h3 {
 
 .skill-html {
     width: 90%;
-    background-color: #f6f600;
+    background-color: #90caf9; /* Blue */
 }
 
 .skill-css {
     width: 80%;
-    background-color: #ff6600;
+    background-color: #81c784; /* Green */
 }
 
 .skill-js {
     width: 75%;
-    background-color: #9acd32;
+    background-color: #fdd835; /* Yellow */
 }
 
 /* Research Interests Section */
 #research-interests ul {
     list-style: disc;
     margin-left: 20px;
-    color: #ddd;
+    color: #cccccc;
 }
 
 #research-interests li {
@@ -176,24 +187,25 @@ h3 {
     margin-bottom: 15px;
     font-size: 1.1em;
     line-height: 1.6;
+    color: #bdbdbd;
 }
 
 /* Contact Section */
 #contact p {
     font-size: 1.2em;
-    color: #ddd;
+    color: #e0e0e0;
     margin-bottom: 10px;
 }
 
 #contact a {
-    color: #f6f600;
+    color: #ffab40; /* Orange color for hover effect */
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease-in-out;
 }
 
 #contact a:hover {
-    color: #ff6600;
+    color: #42a5f5; /* Professional blue color on hover */
     text-decoration: underline;
 }
 
@@ -201,23 +213,85 @@ h3 {
 .footer {
     text-align: right;
     padding: 20px;
-    background: #333;
-    color: #fff;
+    background: #212121; /* Dark background for footer */
+    color: #f5f5f5;
     border-radius: 0 0 12px 12px;
     margin-top: 30px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
+/* Footer links */
 .footer a {
-    color: #f6f600;
+    color: #f5f5f5;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s, transform 0.3s;
 }
 
 .footer a:hover {
-    color: #ff6600;
+    color: #ffab40; /* Hover color set to Orange */
     text-decoration: underline;
     transform: scale(1.1);
+}
+
+/* Project Details Section */
+.project-details {
+    max-height: 0; /* Fully hidden by default */
+    padding: 0; /* No padding when hidden */
+    overflow: hidden; /* Hide content that overflows */
+    background-color: #1e1e1e;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.project-details.show {
+    max-height: 500px; /* Adjust to fit content */
+    padding: 10px; /* Add padding when visible */
+}
+
+/* Project Name */
+.project-name {
+    cursor: pointer;
+    color: #90caf9; /* Blue color for project names */
+    font-weight: bold;
+    margin-bottom: 4px;
+    padding: 0;
+    display: block;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.project-name:hover {
+    text-decoration: underline;
+    color: #42a5f5; /* Change to professional blue color on hover */
+    transform: scale(1.05);
+}
+
+/* Button System for Project Parts */
+.project-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #42a5f5; /* Professional blue */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+    margin: 5px;
+}
+
+.project-button:hover {
+    background-color: #1e88e5; /* Darker blue on hover */
+    transform: scale(1.05);
+}
+
+.project-button:active {
+    background-color: #1565c0; /* Even darker blue for active state */
+    transform: scale(0.95);
 }
 
 /* Responsive Design */
@@ -251,5 +325,30 @@ h3 {
     .project-name {
         font-size: 1.1em;
         margin-bottom: 8px;
+    }
+
+    .project-button {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+}
+
+/* Media Query for Tablets and Larger Screens (min-width: 768px) */
+@media (min-width: 768px) {
+    header {
+        padding: 100px 20px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .section-box {
+        padding: 25px;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5em;
     }
 }
