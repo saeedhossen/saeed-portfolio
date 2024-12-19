@@ -38,25 +38,26 @@ p, ul, li {
 header {
     background-color: transparent;
     text-align: center;
-    padding: 200px 20px 20px;
+    padding: 200px 20px 20px; /* Adjusted padding for better alignment */
     background-image: url('https://raw.githubusercontent.com/saeedhossen/saeed-portfolio/refs/heads/main/b.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative; /* Ensure absolute positioning of child elements is relative to the header */
+    height: 100vh; /* Ensure header takes full viewport height */
 }
 
-/* Main Heading (Name) */
 /* Main Heading (Name) */
 header h1 {
     font-size: 3.5em;
     font-weight: bold;
     color: skyblue; /* Sky blue color */
-    margin-top: 0; /* Removed margin to center vertically */
+    margin-top: 0; /* Remove margin to center vertically */
     text-align: center; /* Center align the text horizontally */
-    position: absolute; /* Use absolute positioning to center it */
-    top: 50%; /* Position vertically in the middle */
+    position: absolute; /* Use absolute positioning to place it inside the header */
+    bottom: 30%; /* Position it near the bottom */
     left: 50%; /* Position horizontally in the middle */
-    transform: translate(-50%, -50%); /* Adjust for exact center alignment */
+    transform: translateX(-50%); /* Adjust for horizontal center alignment */
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6); /* Blackish/ash effect */
 }
 
@@ -67,12 +68,13 @@ header p {
     color: #ff6600; /* Orange color */
     margin-top: 10px;
     text-align: center; /* Center align the text horizontally */
-    position: absolute; /* Use absolute positioning to position below h1 */
-    top: 60%; /* Position just below the h1 */
+    position: absolute; /* Use absolute positioning to position it below h1 */
+    bottom: 10%; /* Position just above the very bottom of the header */
     left: 50%; /* Position horizontally in the middle */
     transform: translateX(-50%); /* Adjust for horizontal center alignment */
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6); /* Blackish/ash effect */
 }
+
 
 /* Section Headings */
 h2 {
