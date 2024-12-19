@@ -29,6 +29,9 @@ p, ul, li {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    display: flex;
+    flex-direction: column; /* Ensures child elements stack vertically */
+    align-items: center; /* Center-align elements in the container */
 }
 
 /* Header Section */
@@ -81,6 +84,7 @@ h3 {
     background: none;
     border: none;
     margin-bottom: 30px;
+    width: 100%;
 }
 
 /* Skills Section */
@@ -176,6 +180,7 @@ h3 {
     width: 100%;
 }
 
+/* Footer links */
 .footer a {
     color: #fff;
     text-decoration: none;
@@ -235,6 +240,7 @@ h3 {
     .container {
         width: 100%;
         padding: 15px;
+        align-items: center; /* Ensure center alignment on mobile */
     }
 
     .section-box {
