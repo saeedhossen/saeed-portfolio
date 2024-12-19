@@ -34,45 +34,32 @@ p, ul, li {
     align-items: flex-start; /* Adjusted for left-alignment */
 }
 
-/* Header Section */
 header {
     background-color: transparent;
     text-align: center;
-    padding: 200px 20px 20px; /* Adjusted padding for better alignment */
+    padding: 200px 20px 20px;
     background-image: url('https://raw.githubusercontent.com/saeedhossen/saeed-portfolio/refs/heads/main/b.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative; /* Ensure absolute positioning of child elements is relative to the header */
-    height: 100vh; /* Ensure header takes full viewport height */
 }
 
 /* Main Heading (Name) */
 header h1 {
     font-size: 3.5em;
     font-weight: bold;
-    color: skyblue; /* Sky blue color */
-    margin-top: 0; /* Remove margin to center vertically */
-    text-align: center; /* Center align the text horizontally */
-    position: absolute; /* Use absolute positioning to place it inside the header */
-    bottom: 30%; /* Position it near the bottom */
-    left: 50%; /* Position horizontally in the middle */
-    transform: translateX(-50%); /* Adjust for horizontal center alignment */
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6); /* Blackish/ash effect */
+    color: skyblue; /* Updated color */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add contrast */
 }
 
 /* Subheading (Profession) */
 header p {
     font-size: 1.5em;
     font-weight: bold;
-    color: #ff6600; /* Orange color */
+    color: lemonchiffon;
     margin-top: 10px;
-    text-align: center; /* Center align the text horizontally */
-    position: absolute; /* Use absolute positioning to position it below h1 */
-    bottom: 10%; /* Position just above the very bottom of the header */
-    left: 50%; /* Position horizontally in the middle */
-    transform: translateX(-50%); /* Adjust for horizontal center alignment */
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6); /* Blackish/ash effect */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 
