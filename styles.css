@@ -47,13 +47,27 @@ header {
     height: 400px; /* Set height for header */
 }
 
+/* Add ash shadow effect on the sides */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to left, rgba(169, 169, 169, 0.6), transparent), 
+                linear-gradient(to right, rgba(169, 169, 169, 0.6), transparent);
+    z-index: 1; /* Ensure it sits above the background image but below the content */
+}
+
+
 /* Main Heading (Name) */
 header h1 {
     font-size: 3.5em;
     font-weight: bold;
     color: skyblue; /* Updated color */
     margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add contrast */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6), 0px 0px 25px rgba(135, 206, 250, 0.5); /* Stronger shadow with glow */
     position: absolute;
     bottom: 50px; /* Adjust distance from the bottom */
     left: 50%;
@@ -64,14 +78,15 @@ header h1 {
 header p {
     font-size: 1.5em;
     font-weight: bold;
-    color: lemonchiffon;
+    color: #9acd32; /* A green-lemon mix color */
     margin-top: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6), 0px 0px 20px rgba(154, 205, 50, 0.5); /* Stronger shadow with glow */
     position: absolute;
     bottom: 10px; /* Adjust distance from the bottom */
     left: 50%;
     transform: translateX(-50%); /* Center horizontally */
 }
+
 
 /* Section Headings */
 h2 {
