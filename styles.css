@@ -66,7 +66,7 @@ header h1 {
 header p {
     font-size: 1.5em;
     font-weight: bold;
-    color: #81c784; /* Soft green for subheading */
+    color: #ffab40; /* Soft orange for subheading */
     margin-top: 10px;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6), 0px 0px 20px rgba(129, 199, 132, 0.5); /* Stronger shadow with glow */
     position: absolute;
